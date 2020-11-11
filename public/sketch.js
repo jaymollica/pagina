@@ -76,22 +76,22 @@ function drawPos(pos) {
     console.log(pos);
     
     if(pos.c == "red") {
-        image(manoRed, pos.x - 100, pos.y - 109);
+        image(manoRed, pos.x - 150, pos.y - 174);
     }
     else if(pos.c == "green") {
-        image(manoGreen, pos.x - 100, pos.y - 109);
+        image(manoGreen, pos.x - 150, pos.y - 174);
     }
     else if(pos.c == "blue") {
-        image(manoBlue, pos.x - 100, pos.y - 109);
+        image(manoBlue, pos.x - 150, pos.y - 174);
     }
     else if(pos.c == "yellow") {
-        image(manoYellow, pos.x - 100, pos.y - 109);
+        image(manoYellow, pos.x - 150, pos.y - 174);
     }
     else if(pos.c == "orange") {
-        image(manoOrange, pos.x - 100, pos.y - 109);
+        image(manoOrange, pos.x - 150, pos.y - 174);
     }
     else if(pos.c == "purple") {
-        image(manoPurple, pos.x - 100, pos.y - 109);
+        image(manoPurple, pos.x - 150, pos.y - 174);
     }
 
 }
