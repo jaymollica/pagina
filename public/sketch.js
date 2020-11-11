@@ -7,6 +7,7 @@ socket.on('connect', function() {
 });
 
 function preload() {
+
     manoRed = loadImage('img/red.png');
     manoGreen = loadImage('img/green.png');
     manoBlue = loadImage('img/blue.png');
@@ -31,7 +32,7 @@ function setup() {
             
         }
 
-    })
+    });
 
     //Listen for messages named 'data' from the server
     socket.on('data', function(obj) {
@@ -44,12 +45,14 @@ function mouseReleased() {
     //Select color
     let colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple'];
     let color = random(colors);
-    //Grab mouse position
+
+    //Grab mouse position, create data
     let manoData = {
         x: mouseX,
         y: mouseY,
         c: color,
     };
+
     //Send mouse position object to the server
     socket.emit('data', manoData);
 
@@ -71,8 +74,7 @@ function mouseReleased() {
 //Expects an object with a and y properties
 function drawPos(pos) {
     console.log(pos);
-
-    ['red', 'green', 'blue', 'yellow', 'orange', 'purple'];
+    
     if(pos.c == "red") {
         image(manoRed, pos.x - 100, pos.y - 109);
     }
@@ -92,5 +94,4 @@ function drawPos(pos) {
         image(manoPurple, pos.x - 100, pos.y - 109);
     }
 
-    
 }
