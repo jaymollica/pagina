@@ -16,9 +16,13 @@ The work is currently hosted on Glitch.
 
 ![a section of the digital version showing outlines of hands in many colors](pagina.png)
 
+## Set up
+
+To run this work clone the git repo and run `npm install` and `node index.js` from the project root.
+
 ## Going Forward
 
-I can see this project developing in a few directions.
+I can see this project developing in a few directions...
 
 1. **Machine Learning**: I would like user's to hold their hand up to their computer's camera and have the app capture the imprint of an actual hand. Google provides a library called "[handpose](https://blog.tensorflow.org/2020/03/face-and-hand-tracking-in-browser-with-mediapipe-and-tensorflowjs.html)" that looks like it could get me started on this. I need to look into image processing in node to create and color the outlines.
 
