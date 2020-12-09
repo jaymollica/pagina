@@ -22,23 +22,31 @@ server.listen(port, () => {
 
 app.post("/manos", (req,res)=> {
     console.log(req.body);
-    let currentDate = Date();
-    let obj = {
-        date: currentDate,
-        x: req.body.x,
-        y: req.body.y,
-        c: req.body.c,
-    }
 
-    //insert into db
-    db.insert(obj, (err, newDocs)=> {
-        if(err) {
-            res.json({status: "fail"});
+    if(req.body.p) {
+
+        let currentDate = Date();
+        let obj = {
+            date: currentDate,
+            x: req.body.x,
+            y: req.body.y,
+            c: req.body.c,
+            p: req.body.p,
         }
-        else {
-            res.json({status: "success"});
-        }
-    });
+
+        
+
+        //insert into db
+        db.insert(obj, (err, newDocs)=> {
+            if(err) {
+                res.json({status: "fail"});
+            }
+            else {
+                res.json({status: "success"});
+            }
+        });
+
+    }
 
 });
 

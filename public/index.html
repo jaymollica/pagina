@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js"></script>
-    <link href="style.css" rel="stylesheet">
-    </link>
+    <link href="style.css" rel="stylesheet"></link>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
     <title>Página de las Manos</title>
 </head>
 
 <body>
-    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <div id="introContainer" class="intro-overlay">
+        <h1>Welcome to Pagina de los Manos</h1>
+        <p>
+            In Patagonia there is a prehistoric site called Cueva de los Manos. It is one of the Earth's most ancient examples of artistic expression, composed of stenciled hand imprints alongside depictions of animals and hunting activities. 
+        </p>
+        <img src="img/cueva.png" />
+        <p>
+            I've always found this to be an inspiring example of humankind's impulse to make a mark. The hands are anonymous and expressionless, only indicating that someone was present at some point in time.
+        </p>
+        <img src="img/red/peace.png" />
+        <img src="img/green/open.png" />
+        <img src="img/blue/horns.png" />
+        <p>
+            This site, Pagina de los Manos, is an attempt to recreate the anonymous presence of the cave in a digital setting. Your device's camera will capture your hand in one of three poses: peace sign ✌️, horns 🤘, or open palm ✋ and a click of the mouse will set the pose forever in the page. You may see others anonymously adding their imprints as you add your own.
+        </p>
+        <button id="introClose">Enter</button>
+    </div>
     <script src="sketch.js"></script>
 </body>
 </html>
