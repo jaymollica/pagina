@@ -2,7 +2,7 @@
 
 [Cueva de las Manos](https://en.wikipedia.org/wiki/Cueva_de_las_Manos) is a cave in Argentina that is decorated with hundreds of prehistoric hand imprints.
 
-![a section of the cave showing outlines of hands](cueva.png)
+![a section of the cave showing outlines of hands](cueva.jpg)
 
 The image of the cave left a deep impression on me. I found it to be an eerie and moving monument to the human impulse to assert one's presence, and I wondered what a digital representation for this would be like.
 
@@ -14,7 +14,7 @@ The work is a node app that leverages nedb and websockets to create a realtime e
 
 The work is currently hosted on Glitch.
 
-![a section of the digital version showing outlines of hands in many colors](pagina.png)
+![a section of the digital version showing outlines of hands in many colors](pagina.jpg)
 
 ## Set up
 
