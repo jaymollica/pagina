@@ -42,7 +42,7 @@ I can see this project developing in a few directions...
 
 There are other considerations such as when to clear the canvas and start fresh again. The work could also be given different "rooms" that would allow for site/screen specific instances.
 
-The site is starting to get more "heavey", so moving it from Glitch to a platform like heroku or AWS might be needed soon.
+The site is starting to get more "heavy", so moving it from Glitch to a platform like heroku or AWS might be needed soon.
 
 ## Visit
 
